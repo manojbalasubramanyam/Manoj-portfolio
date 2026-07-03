@@ -187,17 +187,8 @@ a{color:inherit;}
   border:2px solid var(--trace);
   box-shadow:0 0 0 6px rgba(0,255,157,0.06),0 0 40px rgba(0,255,157,0.15);
   background:var(--panel);
-}
-.avatar-fallback{
-  width:168px;height:168px;
-  border-radius:50%;
-  display:flex;align-items:center;justify-content:center;
-  background:var(--panel);
-  border:2px solid var(--trace);
-  font-family:'Space Grotesk',sans-serif;
-  font-size:2.6rem;font-weight:700;
-  color:var(--trace);
-  box-shadow:0 0 0 6px rgba(0,255,157,0.06),0 0 40px rgba(0,255,157,0.15);
+  position: relative;
+  z-index: 2;
 }
 
 .hero-title{
@@ -598,7 +589,7 @@ footer p{margin:0;font-size:0.82rem;color:var(--ink-dim);}
 
     <div class="avatar-ring" id="avatarRing">
       <svg viewBox="0 0 196 196"><circle class="ring-path" cx="98" cy="98" r="92"/></svg>
-      <div class="avatar-fallback">BM</div>
+      <img src="manoj-photo.png" alt="Balasubramanyam Manoj" class="avatar-photo">
     </div>
 
     <h1 class="hero-title" id="heroTitle">Balasubramanyam Manoj</h1>
