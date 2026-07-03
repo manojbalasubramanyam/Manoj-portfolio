@@ -681,935 +681,269 @@ footer p{margin:0;font-size:0.82rem;color:var(--ink-dim);}
         <div class="proj-index">PRJ / 02</div>
         <div class="proj-icon"><i class="bi bi-lightbulb"></i></div>
         <h4>Automatic Street Lights</h4>
-        <p>Energy-efficient lighting proj-grid{grid-template-columns:1fr;}}
+        <p>Energy-efficient lighting that uses ambient light sensors to switch on at dusk and off at dawn — cutting power consumption and removing the need for manual operation.</p>
+      </div>
+      <div class="proj-card reveal-on-scroll">
+        <div class="proj-index">PRJ / 03</div>
+        <div class="proj-icon"><i class="bi bi-heart"></i></div>
+        <h4>Community Service Project</h4>
+        <p>A volunteer-driven initiative designed to address specific local needs, foster civic responsibility, and improve the overall well-being of a community.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-.proj-card{
-  background:linear-gradient(180deg,var(--panel) 0%,var(--panel-2) 100%);
-  border:1px solid var(--line);
-  border-radius:10px;
-  padding:30px 26px;
-  position:relative;
-  overflow:hidden;
-  transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease;
-  cursor: pointer;
-}
-.proj-card::after{
-  content:'';
-  position:absolute;
-  top:-40%;left:-40%;
-  width:80%;height:80%;
-  background:radial-gradient(circle,rgba(0,255,157,0.14) 0%,transparent 70%);
-  opacity:0;
-  transition:opacity .4s ease;
-  pointer-events:none;
-}
-.proj-card:hover{
-  transform:translateY(-8px);
-  border-color:var(--trace-dim);
-  box-shadow:0 20px 40px rgba(0,0,0,0.4);
-}
-.proj-card:hover::after{opacity:1;}
-.proj-index{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:0.72rem;
-  color:var(--trace-dim);
-  letter-spacing:2px;
-  margin-bottom:18px;
-}
-.proj-icon{
-  width:46px;height:46px;
-  border-radius:8px;
-  background:rgba(0,255,157,0.08);
-  border:1px solid var(--trace-dim);
-  display:flex;align-items:center;justify-content:center;
-  font-size:1.3rem;color:var(--trace);
-  margin-bottom:18px;
-}
-.proj-card h4{
-  font-size:1.12rem;font-weight:600;margin-bottom:12px;color:var(--ink);
-}
-.proj-card p{
-  color:var(--ink-dim);
-  font-size:0.87rem;
-  line-height:1.75;
-  margin:0;
-}
+<section id="achievements" style="background:rgba(13,27,42,0.35);">
+  <div class="container-narrow">
+    <div class="two-col">
+      <div>
+        <div class="eyebrow reveal-on-scroll">04 · Recognition</div>
+        <h2 class="section-heading reveal-on-scroll" style="margin-bottom:30px;">Achievements</h2>
+        <div class="list-item reveal-on-scroll"><i class="bi bi-trophy-fill li-icon"></i><span>2nd prize — Project Expo, Narayana Engineering College, 2024</span></div>
+        <div class="list-item reveal-on-scroll"><i class="bi bi-trophy-fill li-icon"></i><span>3rd prize — Project Expo, Narayana Engineering College, 2025</span></div>
+        <div class="list-item reveal-on-scroll"><i class="bi bi-trophy-fill li-icon"></i><span>2nd prize — Project Expo, Narayana Engineering College, 2026</span></div>
+      </div>
+      <div>
+        <div class="eyebrow reveal-on-scroll">05 · Verified</div>
+        <h2 class="section-heading reveal-on-scroll" style="margin-bottom:30px;">Certifications</h2>
+        <div class="list-item cert reveal-on-scroll"><i class="bi bi-patch-check-fill li-icon"></i><span>Certified in Quantum Fundamentals program</span></div>
+        <div class="list-item cert reveal-on-scroll"><i class="bi bi-patch-check-fill li-icon"></i><span>Certified in Competitive English by NPTEL</span></div>
+      </div>
+    </div>
+  </div>
+</section>
 
-/* ============ ACHIEVEMENTS / CERTS ============ */
-.two-col{display:grid;grid-template-columns:1fr 1fr;gap:60px;}
-@media(max-width:768px){.two-col{grid-template-columns:1fr;gap:50px;}}
+<section id="contact">
+  <div class="container-narrow">
+    <div class="eyebrow reveal-on-scroll">06 · Reach Out</div>
+    <h2 class="section-heading reveal-on-scroll">Contact Me</h2>
 
-.list-item{
-  display:flex;
-  align-items:flex-start;
-  gap:16px;
-  padding:18px 20px;
-  background:var(--panel);
-  border:1px solid var(--line);
-  border-radius:8px;
-  margin-bottom:12px;
-  transition:transform .25s ease,border-color .25s ease;
-}
-.list-item:hover{transform:translateX(6px);border-color:var(--gold);}
-.list-item .li-icon{
-  color:var(--gold);
-  font-size:1.15rem;
-  margin-top:2px;
-  flex-shrink:0;
-}
-.list-item.cert .li-icon{color:var(--trace);}
-.list-item span{font-size:0.9rem;color:var(--ink);line-height:1.6;}
+    <div class="contact-grid">
+      <a href="mailto:manojbalasubramanyam7@gmail.com" class="contact-card reveal-on-scroll">
+        <i class="bi bi-envelope-at-fill"></i>
+        <h6>Email</h6>
+        <p>manojbalasubramanyam7@gmail.com</p>
+      </a>
+      <a href="tel:+917287039493" class="contact-card reveal-on-scroll">
+        <i class="bi bi-telephone-fill"></i>
+        <h6>Phone</h6>
+        <p>+91 7287039493</p>
+      </a>
+      <div class="contact-card reveal-on-scroll" style="cursor:default;">
+        <i class="bi bi-geo-alt-fill"></i>
+        <h6>Location</h6>
+        <p>Nellore, Andhra Pradesh</p>
+      </div>
+      <a href="https://www.linkedin.com/in/manoj-balasubramanyam-646521353" target="_blank" rel="noopener" class="contact-card reveal-on-scroll">
+        <i class="bi bi-linkedin"></i>
+        <h6>LinkedIn</h6>
+        <p>Connect with me</p>
+      </a>
+    </div>
+  </div>
+</section>
 
-/* ============ CONTACT ============ */
-.contact-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:16px;
-}
-@media(max-width:900px){.contact-grid{grid-template-columns:repeat(2,1fr);}}
-@media(max-width:520px){.contact-grid{grid-template-columns:1fr;}}
+<footer>
+  <p>&copy; 2026 Balasubramanyam Manoj. All Rights Reserved.</p>
+  <p class="declaration">"I hereby declare that the information provided above is true and correct to the best of my knowledge and belief."</p>
+</footer>
 
-.contact-card{
-  background:var(--panel);
-  border:1px solid var(--line);
-  border-radius:10px;
-  padding:30px 20px;
-  text-align:center;
-  text-decoration:none;
-  display:block;
-  transition:all .3s ease;
-  position:relative;
-}
-.contact-card:hover{
-  border-color:var(--trace);
-  transform:translateY(-6px);
-  box-shadow:0 16px 32px rgba(0,255,157,0.08);
-}
-.contact-card i{
-  font-size:1.7rem;
-  color:var(--trace);
-  margin-bottom:14px;
-  display:block;
-  transition:transform .3s ease;
-}
-.contact-card:hover i{transform:scale(1.15);}
-.contact-card h6{
-  font-family:'Space Grotesk',sans-serif;
-  font-size:0.72rem;
-  letter-spacing:2px;
-  text-transform:uppercase;
-  color:var(--ink-dim);
-  margin-bottom:8px;
-}
-.contact-card p{
-  font-size:0.82rem;
-  color:var(--ink);
-  margin:0;
-  word-break:break-word;
-}
+</div>
 
-/* ============ FOOTER ============ */
-footer{
-  border-top:1px solid var(--line);
-  padding:40px 24px 30px;
-  text-align:center;
-}
-footer p{margin:0;font-size:0.82rem;color:var(--ink-dim);}
-.declaration{
-  font-style:italic;
-  font-size:0.78rem;
-  color:#4a5568;
-  margin-top:16px;
-  padding-top:16px;
-  border-top:1px solid var(--line);
-  max-width:520px;
-  margin-left:auto;margin-right:auto;
-}
+<script>
+/* ===== Scroll progress bar ===== */
+window.addEventListener('scroll', () => {
+  const h = document.documentElement;
+  const pct = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
+  document.getElementById('scroll-bar').style.width = pct + '%';
+});
 
-/* ============ SCROLL PROGRESS ============ */
-#scroll-bar{
-  position:fixed;top:0;left:0;height:2px;
-  background:var(--trace);
-  box-shadow:0 0 8px var(--trace);
-  z-index:100;
-  width:0%;
-}
+/* ===== Mobile nav toggle ===== */
+const navToggle = document.getElementById('navToggle');
+const navLinks = document.getElementById('navLinks');
+navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
 
-/* ============ MOBILE NAV ============ */
-@media(max-width:860px){
-  .nav-links{
-    position:fixed;top:63px;left:0;right:0;
-    background:rgba(10,14,20,0.98);
-    backdrop-filter:blur(14px);
-    flex-direction:column;
-    padding:10px 24px 20px;
-    gap:0;
-    border-bottom:1px solid var(--line);
-    transform:translateY(-140%);
-    transition:transform .3s ease;
+/* ===== Hero boot sequence ===== */
+const bootLine = document.getElementById('bootLine');
+setTimeout(() => bootLine.classList.add('show'), 150);
+
+setTimeout(() => {
+  document.getElementById('avatarRing').classList.add('reveal');
+}, 700);
+
+setTimeout(() => {
+  document.getElementById('heroTitle').classList.add('reveal');
+}, 1000);
+
+const roles = ["Electronics & Communication Engineer", "Embedded Systems Builder", "IoT & Sensor Integrator"];
+const typedRole = document.getElementById('typedRole');
+let roleIdx = 0, charIdx = 0, deleting = false;
+
+function typeLoop(){
+  const current = roles[roleIdx];
+  if(!deleting){
+    typedRole.textContent = current.slice(0, charIdx+1);
+    charIdx++;
+    if(charIdx === current.length){
+      deleting = true;
+      setTimeout(typeLoop, 1800);
+      return;
+    }
+  } else {
+    typedRole.textContent = current.slice(0, charIdx-1);
+    charIdx--;
+    if(charIdx === 0){
+      deleting = false;
+      roleIdx = (roleIdx+1) % roles.length;
+    }
   }
-  .nav-links.open{transform:translateY(0);}
-  .nav-links a{padding:14px 0;width:100%;}
-  .nav-toggle{display:flex;}
+  setTimeout(typeLoop, deleting ? 35 : 65);
+}
+setTimeout(typeLoop, 1500);
+
+setTimeout(() => document.getElementById('heroSub').classList.add('reveal'), 1600);
+setTimeout(() => document.getElementById('heroBtn').classList.add('reveal'), 1750);
+
+/* ===== Scroll reveal for sections ===== */
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if(entry.isIntersecting){
+      setTimeout(() => entry.target.classList.add('visible'), i * 40);
+      observer.unobserve(entry.target);
+    }
+  });
+}, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+
+document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
+
+/* ===== Signature element: animated circuit-trace background ===== */
+const canvas = document.getElementById('circuit-canvas');
+const ctx = canvas.getContext('2d');
+let W, H;
+
+function resize(){
+  W = canvas.width = window.innerWidth;
+  H = canvas.height = document.documentElement.scrollHeight;
+}
+resize();
+window.addEventListener('resize', resize);
+
+const GRID = 64;
+const nodes = [];
+const cols = Math.ceil(W / GRID) + 2;
+const rows = Math.ceil(H / GRID) + 2;
+
+// Build a sparse grid graph and pick random orthogonal traces
+function buildTraces(){
+  nodes.length = 0;
+  const traceCount = Math.floor((W * H) / 90000);
+  for(let i=0; i<traceCount; i++){
+    const startCol = Math.floor(Math.random()*cols);
+    const startRow = Math.floor(Math.random()*rows);
+    let x = startCol * GRID;
+    let y = startRow * GRID;
+    const segments = [{x,y}];
+    const segCount = 3 + Math.floor(Math.random()*4);
+    let dir = Math.floor(Math.random()*4); // 0up 1right 2down 3left
+    for(let s=0; s<segCount; s++){
+      // occasionally turn 90deg
+      if(Math.random() < 0.6){
+        dir = (dir + (Math.random()<0.5?1:-1) + 4) % 4;
+      }
+      const len = GRID * (1 + Math.floor(Math.random()*2));
+      if(dir===0) y -= len;
+      if(dir===1) x += len;
+      if(dir===2) y += len;
+      if(dir===3) x -= len;
+      segments.push({x,y});
+    }
+    nodes.push({
+      segments,
+      progress: Math.random(),
+      speed: 0.0015 + Math.random()*0.0025,
+      pulseLength: 0.12 + Math.random()*0.1,
+      hasNode: Math.random() < 0.5,
+      delay: Math.random()*4
+    });
+  }
+}
+buildTraces();
+window.addEventListener('resize', () => { buildTraces(); });
+
+function totalLen(segments){
+  let len = 0;
+  for(let i=0;i<segments.length-1;i++){
+    len += Math.hypot(segments[i+1].x-segments[i].x, segments[i+1].y-segments[i].y);
+  }
+  return len;
 }
 
-/* ============ PROJECT MODAL ============ */
-.modal-overlay {
-  position: fixed; inset: 0;
-  background: rgba(10, 14, 20, 0.85); backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  z-index: 1000; display: flex; align-items: center; justify-content: center;
-  opacity: 0; pointer-events: none; transition: opacity 0.3s ease;
-  padding: 20px;
-}
-.modal-overlay.active { opacity: 1; pointer-events: auto; }
-
-.modal-content {
-  background: linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
-  border: 1px solid var(--trace); border-radius: 10px;
-  width: 100%; max-width: 650px; max-height: 90vh; overflow-y: auto;
-  position: relative; padding: 40px 30px;
-  transform: translateY(30px); transition: transform 0.3s ease;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.6), 0 0 40px rgba(0,255,157,0.1);
-}
-.modal-overlay.active .modal-content { transform: translateY(0); }
-
-.modal-close {
-  position: absolute; top: 15px; right: 20px;
-  background: none; border: none; color: var(--ink-dim);
-  font-size: 1.5rem; cursor: pointer; transition: color 0.2s ease;
-}
-.modal-close:hover { color: var(--danger); }
-
-.modal-img {
-  width: 100%; height: auto; max-height: 300px; object-fit: cover;
-  border-radius: 8px; margin-bottom: 20px; border: 1px solid var(--line);
-  display: none;
+function pointAt(segments, t){
+  const total = totalLen(segments);
+  let target = total * t;
+  for(let i=0;i<segments.length-1;i++){
+    const segLen = Math.hypot(segments[i+1].x-segments[i].x, segments[i+1].y-segments[i].y);
+    if(target <= segLen){
+      const ratio = segLen === 0 ? 0 : target/segLen;
+      return {
+        x: segments[i].x + (segments[i+1].x-segments[i].x)*ratio,
+        y: segments[i].y + (segments[i+1].y-segments[i].y)*ratio
+      };
+    }
+    target -= segLen;
+  }
+  return segments[segments.length-1];
 }
 
-.modal-title { font-size: 1.5rem; font-weight: 700; color: var(--ink); margin: 0 0 10px; }
-.modal-tech { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
-.modal-tech-chip {
-  background: rgba(0, 255, 157, 0.08); color: var(--trace);
-  border: 1px solid var(--trace-dim); padding: 4px 12px;
-  border-radius: 20px; font-size: 0.75rem; letter-spacing: 0.5px;
+let t0 = performance.now();
+function draw(now){
+  const dt = now - t0;
+  t0 = now;
+  ctx.clearRect(0,0,W,H);
+
+  nodes.forEach(n => {
+    // draw dim base trace
+    ctx.beginPath();
+    ctx.moveTo(n.segments[0].x, n.segments[0].y);
+    for(let i=1;i<n.segments.length;i++) ctx.lineTo(n.segments[i].x, n.segments[i].y);
+    ctx.strokeStyle = 'rgba(0,255,157,0.06)';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+
+    // node dots at joints
+    if(n.hasNode){
+      n.segments.forEach(pt => {
+        ctx.beginPath();
+        ctx.arc(pt.x, pt.y, 1.6, 0, Math.PI*2);
+        ctx.fillStyle = 'rgba(0,255,157,0.12)';
+        ctx.fill();
+      });
+    }
+
+    // moving pulse
+    n.progress += n.speed * (dt/16.67);
+    if(n.progress > 1 + n.pulseLength) n.progress = -n.delay*0.05;
+
+    const segCountForGradient = 14;
+    for(let g=0; g<segCountForGradient; g++){
+      const tt = n.progress - (g/segCountForGradient)*n.pulseLength;
+      if(tt < 0 || tt > 1) continue;
+      const pt = pointAt(n.segments, tt);
+      const alpha = (1 - g/segCountForGradient) * 0.9;
+      ctx.beginPath();
+      ctx.arc(pt.x, pt.y, 1.8, 0, Math.PI*2);
+      ctx.fillStyle = `rgba(0,255,157,${alpha})`;
+      ctx.shadowColor = 'rgba(0,255,157,0.8)';
+      ctx.shadowBlur = 6;
+      ctx.fill();
+      ctx.shadowBlur = 0;
+    }
+  });
+
+  requestAnimationFrame(draw);
 }
-.modal-desc { color: var(--ink-dim); font-size: 0.95rem; line-height: 1.8; margin: 0; }
-
-@media(prefers-reduced-motion:reduce){
-  *{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;}
-}
-</style>
-</head>
-<body>
-
-<div id="scroll-bar"></div>
-<canvas id="circuit-canvas"></canvas>
-<div class="grain"></div>
-
-<div class="content-layer">
-
-<nav class="navbar">
-  <div class="nav-wrap">
-    <a href="#home" class="brand"><span class="brand-dot"></span>B. MANOJ</a>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><i class="bi bi-list fs-4"></i></button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#achievements">Achievements</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </div>
-</nav>
-
-<section class="hero" id="home">
-  <div class="hero-inner">
-    <div class="boot-line" id="bootLine">&gt; initializing_profile.sys<span class="caret"></span></div>
-
-    <div class="avatar-ring" id="avatarRing">
-      <svg viewBox="0 0 196 196"><circle class="ring-path" cx="98" cy="98" r="92"/></svg>
-      <img src="your-image-url.jpg" alt="Balasubramanyam Manoj" class="avatar-photo">
-    </div>
-
-    <h1 class="hero-title" id="heroTitle">Balasubramanyam Manoj</h1>
-    <div class="hero-role"><span id="typedRole"></span><span class="caret"></span></div>
-    <p class="hero-sub" id="heroSub">Electronics &amp; Communication Engineering · Narayana Engineering College</p>
-    <a href="#contact" class="btn-trace" id="heroBtn">Get in touch <i class="bi bi-arrow-down-right"></i></a>
-  </div>
-</section>
-
-<section id="about">
-  <div class="container-narrow">
-    <div class="eyebrow reveal-on-scroll">01 · Profile</div>
-    <h2 class="section-heading reveal-on-scroll">About Me</h2>
-    <p class="about-lede reveal-on-scroll">
-      I'm an <strong>Electronics and Communication Engineering</strong> student building assistive smart systems on a foundation of solid hardware design — sensor integration, microcontrollers, and the kind of embedded logic that turns a blink into a command. I write clearly about what I build and work well inside academic project teams.
-    </p>
-
-    <div class="timeline-track">
-      <div class="tl-node reveal-on-scroll">
-        <div class="tl-dot"></div>
-        <div class="tl-period">2023 — 2027</div>
-        <div class="tl-title">Bachelor of Technology</div>
-        <div class="tl-place">Narayana Engineering College</div>
-      </div>
-      <div class="tl-node reveal-on-scroll">
-        <div class="tl-dot"></div>
-        <div class="tl-period">2021 — 2023</div>
-        <div class="tl-title">Junior College</div>
-        <div class="tl-place">Sri Chaithanya Junior College</div>
-      </div>
-      <div class="tl-node reveal-on-scroll">
-        <div class="tl-dot"></div>
-        <div class="tl-period">2020 — 2021</div>
-        <div class="tl-title">High School</div>
-        <div class="tl-place">Sri Lakshmi English Medium School</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="skills" style="background:rgba(13,27,42,0.35);">
-  <div class="container-narrow">
-    <div class="eyebrow reveal-on-scroll">02 · Toolkit</div>
-    <h2 class="section-heading reveal-on-scroll">My Skills</h2>
-
-    <div class="skills-grid">
-      <div class="skill-chip reveal-on-scroll"><i class="bi bi-cpu"></i><span>Internet of Things (IoT)</span></div>
-      <div class="skill-chip reveal-on-scroll"><i class="bi bi-motherboard"></i><span>Embedded Systems</span></div>
-      <div class="skill-chip reveal-on-scroll"><i class="bi bi-memory"></i><span>Microcontrollers</span></div>
-      <div class="skill-chip reveal-on-scroll"><i class="bi bi-broadcast"></i><span>Sensor Integration</span></div>
-      <div class="skill-chip reveal-on-scroll"><i class="bi bi-gear-wide-connected"></i><span>Smart Control Systems</span></div>
-      <div class="skill-chip reveal-on-scroll"><i class="bi bi-people"></i><span>Team Leadership</span></div        }
-
-        /* Navbar - Glassmorphism Effect */
-        .navbar {
-            background-color: transparent !important;
-            padding: 20px 0;
-            transition: all 0.4s ease-in-out;
-        }
-        
-        .navbar.scrolled {
-            background-color: rgba(33, 37, 41, 0.95) !important;
-            backdrop-filter: blur(10px);
-            padding: 10px 0;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-        }
-        
-        .navbar-brand {
-            font-weight: 800;
-            letter-spacing: 1px;
-            color: #fff !important;
-            font-size: 1.5rem;
-        }
-
-        .nav-link {
-            font-weight: 500;
-            color: #e9ecef !important;
-            margin: 0 5px;
-            position: relative;
-        }
-        
-        /* Nav Link Underline Animation */
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: var(--accent-color);
-            transition: width 0.3s ease;
-        }
-
-        .nav-link:hover::after, .nav-link.active::after {
-            width: 80%;
-        }
-        
-        .nav-link:hover, .nav-link.active {
-            color: var(--accent-color) !important;
-        }
-
-        /* Hero Section - Animated Gradient */
-        .hero-section {
-            background: linear-gradient(-45deg, var(--hero-grad-1), var(--hero-grad-2), var(--hero-grad-3), var(--hero-grad-4));
-            background-size: 400% 400%;
-            animation: gradientBG 15s ease infinite;
-            color: white;
-            padding: 160px 0 120px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        @keyframes gradientBG {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
-
-        .profile-img {
-            width: 220px;
-            height: 220px;
-            object-fit: cover;
-            border-radius: 50%;
-            border: 6px solid rgba(255, 255, 255, 0.2);
-            margin-bottom: 25px;
-            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
-            transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.4s ease;
-        }
-
-        .profile-img:hover {
-            transform: scale(1.08) rotate(3deg);
-            border-color: rgba(255, 255, 255, 0.9);
-        }
-
-        .hero-title {
-            font-weight: 800;
-            letter-spacing: 1px;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 10px rgba(0,0,0,0.2);
-        }
-
-        /* Typewriter text cursor effect */
-        .typewriter-cursor {
-            border-right: 3px solid var(--accent-color);
-            animation: blink 0.75s step-end infinite;
-            padding-right: 5px;
-        }
-        
-        @keyframes blink {
-            from, to { border-color: transparent }
-            50% { border-color: var(--accent-color); }
-        }
-
-        /* Bouncing Scroll Down Indicator */
-        .scroll-indicator {
-            position: absolute;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
-            color: rgba(255,255,255,0.7);
-            font-size: 2rem;
-            animation: bounce 2s infinite;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .scroll-indicator:hover {
-            color: #fff;
-        }
-
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% { transform: translateY(0) translateX(-50%); }
-            40% { transform: translateY(-20px) translateX(-50%); }
-            60% { transform: translateY(-10px) translateX(-50%); }
-        }
-
-        /* Section Titles */
-        .section-title {
-            margin-bottom: 50px;
-            text-align: center;
-            font-weight: 800;
-            color: var(--hero-grad-1);
-            position: relative;
-            padding-bottom: 15px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-
-        .section-title::after {
-            content: '';
-            width: 80px;
-            height: 5px;
-            background: linear-gradient(90deg, var(--hero-grad-1), var(--hero-grad-2));
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            border-radius: 5px;
-        }
-        
-        .section-title.text-start::after {
-            left: 0;
-            transform: translateX(0);
-        }
-
-        /* Cards & Hover Effects */
-        .card {
-            border: none;
-            border-radius: 16px;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.04);
-            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
-            height: 100%;
-            background-color: #fff;
-            overflow: hidden;
-            position: relative;
-            z-index: 1;
-        }
-
-        /* Card background gradient effect on hover */
-        .card::before {
-            content: "";
-            position: absolute;
-            top: 0; left: 0; width: 100%; height: 100%;
-            background: linear-gradient(135deg, rgba(43, 88, 118, 0.03) 0%, rgba(78, 67, 118, 0.03) 100%);
-            z-index: -1;
-            opacity: 0;
-            transition: opacity 0.4s ease;
-        }
-
-        .card:hover::before {
-            opacity: 1;
-        }
-
-        .card:hover {
-            transform: translateY(-12px) scale(1.02);
-            box-shadow: 0 20px 40px var(--card-hover-shadow);
-        }
-
-        .card i {
-            transition: transform 0.4s ease;
-        }
-
-        .card:hover i {
-            transform: scale(1.2);
-        }
-
-        /* Skills Badges - Floating Animation */
-        .skill-badge {
-            font-size: 1rem;
-            margin: 8px;
-            padding: 12px 25px;
-            background-color: #fff;
-            color: var(--hero-grad-1);
-            border-radius: 50px;
-            display: inline-block;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.06);
-            transition: all 0.3s;
-            font-weight: 600;
-            animation: float 6s ease-in-out infinite;
-        }
-
-        .skill-badge:nth-child(even) {
-            animation-delay: 1s;
-        }
-
-        .skill-badge:nth-child(3n) {
-            animation-delay: 2s;
-        }
-
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-8px); }
-            100% { transform: translateY(0px); }
-        }
-
-        .skill-badge:hover {
-            background: linear-gradient(135deg, var(--hero-grad-1), var(--hero-grad-2));
-            color: #fff;
-            transform: translateY(-5px) scale(1.05) !important;
-            box-shadow: 0 10px 20px rgba(43, 88, 118, 0.4);
-            animation-play-state: paused;
-        }
-
-        .lang-badge {
-            font-size: 1rem;
-            padding: 12px 25px;
-            border-radius: 10px;
-            font-weight: 600;
-            letter-spacing: 1px;
-            margin: 5px;
-            background-color: var(--hero-grad-2) !important;
-            transition: transform 0.3s ease;
-        }
-
-        .lang-badge:hover {
-            transform: scale(1.1);
-        }
-
-        /* Lists for Achievements/Certifications */
-        .custom-list-item {
-            border: none;
-            padding: 18px 25px;
-            margin-bottom: 15px;
-            background-color: #fff;
-            border-radius: 12px !important;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.04);
-            transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            font-weight: 500;
-            display: flex;
-            align-items: center;
-        }
-
-        .custom-list-item:hover {
-            transform: translateX(10px) scale(1.02);
-            border-left: 5px solid var(--hero-grad-2);
-            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-        }
-
-        .custom-list-item i {
-            font-size: 1.5rem;
-        }
-
-        /* Contact Section */
-        .contact-box {
-            padding: 40px 20px;
-            border-radius: 16px;
-            background: #fff;
-            box-shadow: 0 8px 25px rgba(0,0,0,0.04);
-            height: 100%;
-            transition: all 0.4s ease;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .contact-box:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-            background: linear-gradient(135deg, #fff 0%, #f0f4f8 100%);
-        }
-
-        .contact-box i {
-            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            background: rgba(43, 88, 118, 0.1);
-            width: 80px;
-            height: 80px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            margin-bottom: 15px;
-        }
-
-        .contact-box:hover i {
-            transform: scale(1.2) rotate(10deg);
-            background: rgba(43, 88, 118, 0.2);
-        }
-
-        .contact-link {
-            color: #495057;
-            text-decoration: none;
-            transition: color 0.3s;
-            font-weight: 600;
-        }
-        
-        .contact-link:hover {
-            color: var(--hero-grad-1);
-        }
-
-        /* Footer */
-        footer {
-            background-color: #1a1e21;
-            color: #adb5bd;
-            padding: 50px 0 30px;
-            position: relative;
-        }
-
-        footer::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 4px;
-            background: linear-gradient(90deg, var(--hero-grad-1), var(--hero-grad-2), var(--accent-color));
-        }
-        
-        .declaration {
-            font-style: italic;
-            font-size: 0.95rem;
-            margin-top: 25px;
-            padding-top: 25px;
-            border-top: 1px solid #2c3136;
-            color: #6c757d;
-        }
-
-        /* Scroll Animation Classes */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(40px);
-            transition: opacity 0.8s cubic-bezier(0.5, 0, 0, 1), transform 0.8s cubic-bezier(0.5, 0, 0, 1);
-        }
-        
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        /* Staggered animations for children */
-        .stagger-1 { transition-delay: 0.1s; }
-        .stagger-2 { transition-delay: 0.2s; }
-        .stagger-3 { transition-delay: 0.3s; }
-        .stagger-4 { transition-delay: 0.4s; }
-    </style>
-</head>
-<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="70">
-
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="#home">B. Manoj</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <section class="hero-section" id="home">
-        <div class="container">
-            <img src="manoj-photo.png" alt="Balasubramanyam Manoj" class="profile-img">
-            <h1 class="display-3 hero-title">Balasubramanyam Manoj</h1>
-            <p class="lead fs-3 mt-3 fw-light">
-                <span id="typed-text" class="typewriter-cursor"></span>
-            </p>
-            <a href="#contact" class="btn btn-outline-light btn-lg mt-4 px-5 rounded-pill shadow-lg border-2 fw-bold" style="transition: all 0.3s;">Get in Touch</a>
-        </div>
-        <a href="#about" class="scroll-indicator"><i class="bi bi-chevron-double-down"></i></a>
-    </section>
-
-    <section class="py-5 mt-5" id="about">
-        <div class="container fade-in">
-            <h2 class="section-title">About Me</h2>
-            <div class="row justify-content-center mb-5">
-                <div class="col-md-10 text-center text-secondary">
-                    <p class="lead fs-5 lh-lg">
-                        I am an <strong>Electronics and Communication Engineering</strong> student with practical experience in developing assistive smart systems and a strong foundation in hardware design. Adept at technical writing and collaborating within academic project teams.
-                    </p>
-                </div>
-            </div>
-            
-            <div class="row g-4">
-                <div class="col-md-4 fade-in stagger-1">
-                    <div class="card p-4 text-center">
-                        <i class="bi bi-book fs-1 text-primary mb-3"></i>
-                        <h5 class="fw-bold">Bachelor of Technology</h5>
-                        <p class="text-muted mb-2">2023 - 2027</p>
-                        <p class="text-secondary mb-0">Narayana Engineering College</p>
-                    </div>
-                </div>
-                <div class="col-md-4 fade-in stagger-2">
-                    <div class="card p-4 text-center">
-                        <i class="bi bi-building fs-1 text-primary mb-3"></i>
-                        <h5 class="fw-bold">Junior College</h5>
-                        <p class="text-muted mb-2">2021 - 2023</p>
-                        <p class="text-secondary mb-0">Sri Chaithanya Junior College</p>
-                    </div>
-                </div>
-                <div class="col-md-4 fade-in stagger-3">
-                    <div class="card p-4 text-center">
-                        <i class="bi bi-backpack fs-1 text-primary mb-3"></i>
-                        <h5 class="fw-bold">High School</h5>
-                        <p class="text-muted mb-2">2020 - 2021</p>
-                        <p class="text-secondary mb-0">Sri Lakshmi English Medium School</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-5 bg-light" id="skills">
-        <div class="container fade-in">
-            <h2 class="section-title">My Skills</h2>
-            <div class="text-center mb-5 py-3">
-                <span class="skill-badge"><i class="bi bi-cpu me-2"></i>Internet of Things (IoT)</span>
-                <span class="skill-badge"><i class="bi bi-motherboard me-2"></i>Embedded Systems</span>
-                <span class="skill-badge"><i class="bi bi-microchip me-2"></i>Microcontrollers</span>
-                <span class="skill-badge"><i class="bi bi-wifi me-2"></i>Sensor Integration</span>
-                <span class="skill-badge"><i class="bi bi-gear-wide-connected me-2"></i>Smart Control Systems</span>
-                <span class="skill-badge"><i class="bi bi-people me-2"></i>Team Leadership</span>
-                <span class="skill-badge"><i class="bi bi-easel me-2"></i>Technical Presentations</span>
-                <span class="skill-badge"><i class="bi bi-diagram-3 me-2"></i>Project Coordination</span>
-            </div>
-            
-            <div class="text-center mt-5 fade-in stagger-2">
-                <h4 class="mb-4 text-secondary fw-bold text-uppercase tracking-wide">Languages Known</h4>
-                <span class="badge lang-badge shadow-sm">English</span>
-                <span class="badge lang-badge shadow-sm">Tamil</span>
-                <span class="badge lang-badge shadow-sm">Telugu</span>
-                <span class="badge lang-badge shadow-sm">Hindi</span>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-5" id="projects">
-        <div class="container fade-in">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="row g-4 mt-2">
-                <div class="col-md-4 fade-in stagger-1">
-                    <div class="card p-4">
-                        <div class="d-flex align-items-center mb-3">
-                            <i class="bi bi-eye fs-2 text-primary me-3"></i>
-                            <h4 class="text-primary mb-0 fw-bold">Eyeblink Controlled Wheelchair</h4>
-                        </div>
-                        <p class="text-secondary mt-2 lh-base">
-                            An assistive mobility device that uses sensors to detect intentional eye movements and translates them into directional commands, enabling independent navigation for individuals with severe physical disabilities.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4 fade-in stagger-2">
-                    <div class="card p-4">
-                        <div class="d-flex align-items-center mb-3">
-                            <i class="bi bi-lightbulb fs-2 text-primary me-3"></i>
-                            <h4 class="text-primary mb-0 fw-bold">Automatic Street Lights</h4>
-                        </div>
-                        <p class="text-secondary mt-2 lh-base">
-                            Energy-efficient lighting systems that use ambient light sensors to automatically turn on at dusk and off at dawn, reducing power consumption and eliminating the need for manual operation.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4 fade-in stagger-3">
-                    <div class="card p-4">
-                        <div class="d-flex align-items-center mb-3">
-                            <i class="bi bi-heart fs-2 text-primary me-3"></i>
-                            <h4 class="text-primary mb-0 fw-bold">Community Service Project</h4>
-                        </div>
-                        <p class="text-secondary mt-2 lh-base">
-                            A volunteer-driven initiative designed to address specific local needs, foster civic responsibility, and improve the overall well-being of a community.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-5 bg-light" id="achievements">
-        <div class="container fade-in">
-            <div class="row g-5 mt-2">
-                <div class="col-md-6 fade-in stagger-1">
-                    <h2 class="section-title text-start">Achievements</h2>
-                    <ul class="list-group list-group-flush mt-4">
-                        <li class="list-group-item custom-list-item">
-                            <i class="bi bi-trophy-fill text-warning me-3"></i> 2nd prize in Project Expo at Narayana Engineering College (2024)
-                        </li>
-                        <li class="list-group-item custom-list-item">
-                            <i class="bi bi-trophy-fill text-warning me-3"></i> 3rd prize in Project Expo at Narayana Engineering College (2025)
-                        </li>
-                        <li class="list-group-item custom-list-item">
-                            <i class="bi bi-trophy-fill text-warning me-3"></i> 2nd prize in Project Expo at Narayana Engineering College (2026)
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-6 fade-in stagger-2">
-                    <h2 class="section-title text-start">Certifications</h2>
-                    <ul class="list-group list-group-flush mt-4">
-                        <li class="list-group-item custom-list-item">
-                            <i class="bi bi-patch-check-fill text-success me-3"></i> Certified in Quantum Fundamentals program
-                        </li>
-                        <li class="list-group-item custom-list-item">
-                            <i class="bi bi-patch-check-fill text-success me-3"></i> Certified in Competitive English by NPTEL
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-5 mb-5" id="contact">
-        <div class="container fade-in">
-            <h2 class="section-title">Contact Me</h2>
-            <div class="row g-4 justify-content-center text-center mt-3">
-                <div class="col-md-3 fade-in stagger-1">
-                    <div class="contact-box">
-                        <i class="bi bi-envelope-at-fill fs-1" style="color: var(--hero-grad-2);"></i>
-                        <h5 class="mt-3 fw-bold">Email</h5>
-                        <p class="mt-2 text-break"><a href="mailto:manojbalasubramanyam7@gmail.com" class="contact-link">manojbalasubramanyam7@gmail.com</a></p>
-                    </div>
-                </div>
-                <div class="col-md-3 fade-in stagger-2">
-                    <div class="contact-box">
-                        <i class="bi bi-telephone-fill fs-1" style="color: var(--hero-grad-2);"></i>
-                        <h5 class="mt-3 fw-bold">Phone</h5>
-                        <p class="mt-2"><a href="tel:+917287039493" class="contact-link">+91 7287039493</a></p>
-                    </div>
-                </div>
-                <div class="col-md-3 fade-in stagger-3">
-                    <div class="contact-box">
-                        <i class="bi bi-geo-alt-fill fs-1" style="color: var(--hero-grad-2);"></i>
-                        <h5 class="mt-3 fw-bold">Location</h5>
-                        <p class="mt-2 text-secondary fw-semibold">Nellore, Andhra Pradesh</p>
-                    </div>
-                </div>
-                <div class="col-md-3 fade-in stagger-4">
-                    <div class="contact-box">
-                        <i class="bi bi-linkedin fs-1" style="color: #0077b5;"></i>
-                        <h5 class="mt-3 fw-bold">LinkedIn</h5>
-                        <p class="mt-2"><a href="https://www.linkedin.com/in/manoj-balasubramanyam-646521353" target="_blank" class="contact-link">Connect with me</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="text-center">
-        <div class="container">
-            <p class="mb-0 fs-6 fw-semibold text-white">&copy; 2026 Balasubramanyam Manoj. All Rights Reserved.</p>
-            <p class="declaration">
-                "I hereby declare that the information provided above is true and correct to the best of my knowledge and belief."
-            </p>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // 1. Transparent to Solid Navbar on Scroll
-        const navbar = document.getElementById('mainNav');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
-        });
-
-        // 2. Typewriter Effect for Hero Subtitle
-        const textToType = "Electronics and Communication Engineer";
-        const typedElement = document.getElementById("typed-text");
-        let i = 0;
-
-        function typeWriter() {
-            if (i < textToType.length) {
-                typedElement.innerHTML += textToType.charAt(i);
-                i++;
-                setTimeout(typeWriter, 70); // slightly faster typing speed
-            }
-        }
-        
-        // Delay typewriter start slightly for better UX
-        setTimeout(typeWriter, 600);
-
-        // 3. Scroll Reveal Animation using Intersection Observer
-        document.addEventListener("DOMContentLoaded", function() {
-            const observerOptions = {
-                root: null,
-                rootMargin: '0px',
-                threshold: 0.15
-            };
-
-            const observer = new IntersectionObserver((entries, observer) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                        observer.unobserve(entry.target); // Reveal only once
-                    }
-                });
-            }, observerOptions);
-
-            const fadeElements = document.querySelectorAll('.fade-in');
-            fadeElements.forEach(el => observer.observe(el));
-        });
-    </script>
+requestAnimationFrame(draw);
+</script>
 </body>
 </html>
