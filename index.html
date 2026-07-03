@@ -39,7 +39,7 @@ h1,h2,h3,h4,h5,.display-font{
 a{color:inherit;}
 ::selection{background:var(--trace);color:#000;}
 
-/* ============ CIRCUIT BACKGROUND ============ */
+/* ============ CIRCUIT BACKGROUND (signature element) ============ */
 #circuit-canvas{
   position:fixed;
   inset:0;
@@ -187,6 +187,17 @@ a{color:inherit;}
   border:2px solid var(--trace);
   box-shadow:0 0 0 6px rgba(0,255,157,0.06),0 0 40px rgba(0,255,157,0.15);
   background:var(--panel);
+}
+.avatar-fallback{
+  width:168px;height:168px;
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--panel);
+  border:2px solid var(--trace);
+  font-family:'Space Grotesk',sans-serif;
+  font-size:2.6rem;font-weight:700;
+  color:var(--trace);
+  box-shadow:0 0 0 6px rgba(0,255,157,0.06),0 0 40px rgba(0,255,157,0.15);
 }
 
 .hero-title{
@@ -384,6 +395,293 @@ section{padding:100px 24px;position:relative;}
 /* ============ PROJECTS ============ */
 .proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
 @media(max-width:900px){.proj-grid{grid-template-columns:1fr;}}
+
+.proj-card{
+  background:linear-gradient(180deg,var(--panel) 0%,var(--panel-2) 100%);
+  border:1px solid var(--line);
+  border-radius:10px;
+  padding:30px 26px;
+  position:relative;
+  overflow:hidden;
+  transition:transform .35s ease,border-color .35s ease,box-shadow .35s ease;
+}
+.proj-card::after{
+  content:'';
+  position:absolute;
+  top:-40%;left:-40%;
+  width:80%;height:80%;
+  background:radial-gradient(circle,rgba(0,255,157,0.14) 0%,transparent 70%);
+  opacity:0;
+  transition:opacity .4s ease;
+  pointer-events:none;
+}
+.proj-card:hover{
+  transform:translateY(-8px);
+  border-color:var(--trace-dim);
+  box-shadow:0 20px 40px rgba(0,0,0,0.4);
+}
+.proj-card:hover::after{opacity:1;}
+.proj-index{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:0.72rem;
+  color:var(--trace-dim);
+  letter-spacing:2px;
+  margin-bottom:18px;
+}
+.proj-icon{
+  width:46px;height:46px;
+  border-radius:8px;
+  background:rgba(0,255,157,0.08);
+  border:1px solid var(--trace-dim);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.3rem;color:var(--trace);
+  margin-bottom:18px;
+}
+.proj-card h4{
+  font-size:1.12rem;font-weight:600;margin-bottom:12px;color:var(--ink);
+}
+.proj-card p{
+  color:var(--ink-dim);
+  font-size:0.87rem;
+  line-height:1.75;
+  margin:0;
+}
+
+/* ============ ACHIEVEMENTS / CERTS ============ */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:60px;}
+@media(max-width:768px){.two-col{grid-template-columns:1fr;gap:50px;}}
+
+.list-item{
+  display:flex;
+  align-items:flex-start;
+  gap:16px;
+  padding:18px 20px;
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:8px;
+  margin-bottom:12px;
+  transition:transform .25s ease,border-color .25s ease;
+}
+.list-item:hover{transform:translateX(6px);border-color:var(--gold);}
+.list-item .li-icon{
+  color:var(--gold);
+  font-size:1.15rem;
+  margin-top:2px;
+  flex-shrink:0;
+}
+.list-item.cert .li-icon{color:var(--trace);}
+.list-item span{font-size:0.9rem;color:var(--ink);line-height:1.6;}
+
+/* ============ CONTACT ============ */
+.contact-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+}
+@media(max-width:900px){.contact-grid{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:520px){.contact-grid{grid-template-columns:1fr;}}
+
+.contact-card{
+  background:var(--panel);
+  border:1px solid var(--line);
+  border-radius:10px;
+  padding:30px 20px;
+  text-align:center;
+  text-decoration:none;
+  display:block;
+  transition:all .3s ease;
+  position:relative;
+}
+.contact-card:hover{
+  border-color:var(--trace);
+  transform:translateY(-6px);
+  box-shadow:0 16px 32px rgba(0,255,157,0.08);
+}
+.contact-card i{
+  font-size:1.7rem;
+  color:var(--trace);
+  margin-bottom:14px;
+  display:block;
+  transition:transform .3s ease;
+}
+.contact-card:hover i{transform:scale(1.15);}
+.contact-card h6{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:0.72rem;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:var(--ink-dim);
+  margin-bottom:8px;
+}
+.contact-card p{
+  font-size:0.82rem;
+  color:var(--ink);
+  margin:0;
+  word-break:break-word;
+}
+
+/* ============ FOOTER ============ */
+footer{
+  border-top:1px solid var(--line);
+  padding:40px 24px 30px;
+  text-align:center;
+}
+footer p{margin:0;font-size:0.82rem;color:var(--ink-dim);}
+.declaration{
+  font-style:italic;
+  font-size:0.78rem;
+  color:#4a5568;
+  margin-top:16px;
+  padding-top:16px;
+  border-top:1px solid var(--line);
+  max-width:520px;
+  margin-left:auto;margin-right:auto;
+}
+
+/* ============ SCROLL PROGRESS ============ */
+#scroll-bar{
+  position:fixed;top:0;left:0;height:2px;
+  background:var(--trace);
+  box-shadow:0 0 8px var(--trace);
+  z-index:100;
+  width:0%;
+}
+
+/* ============ MOBILE NAV ============ */
+@media(max-width:860px){
+  .nav-links{
+    position:fixed;top:63px;left:0;right:0;
+    background:rgba(10,14,20,0.98);
+    backdrop-filter:blur(14px);
+    flex-direction:column;
+    padding:10px 24px 20px;
+    gap:0;
+    border-bottom:1px solid var(--line);
+    transform:translateY(-140%);
+    transition:transform .3s ease;
+  }
+  .nav-links.open{transform:translateY(0);}
+  .nav-links a{padding:14px 0;width:100%;}
+  .nav-toggle{display:flex;}
+}
+
+@media(prefers-reduced-motion:reduce){
+  *{animation-duration:0.01ms !important;animation-iteration-count:1 !important;transition-duration:0.01ms !important;}
+}
+</style>
+</head>
+<body>
+
+<div id="scroll-bar"></div>
+<canvas id="circuit-canvas"></canvas>
+<div class="grain"></div>
+
+<div class="content-layer">
+
+<nav class="navbar">
+  <div class="nav-wrap">
+    <a href="#home" class="brand"><span class="brand-dot"></span>B. MANOJ</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><i class="bi bi-list fs-4"></i></button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="boot-line" id="bootLine">&gt; initializing_profile.sys<span class="caret"></span></div>
+
+    <div class="avatar-ring" id="avatarRing">
+      <svg viewBox="0 0 196 196"><circle class="ring-path" cx="98" cy="98" r="92"/></svg>
+      <div class="avatar-fallback">BM</div>
+    </div>
+
+    <h1 class="hero-title" id="heroTitle">Balasubramanyam Manoj</h1>
+    <div class="hero-role"><span id="typedRole"></span><span class="caret"></span></div>
+    <p class="hero-sub" id="heroSub">Electronics &amp; Communication Engineering · Narayana Engineering College</p>
+    <a href="#contact" class="btn-trace" id="heroBtn">Get in touch <i class="bi bi-arrow-down-right"></i></a>
+  </div>
+</section>
+
+<section id="about">
+  <div class="container-narrow">
+    <div class="eyebrow reveal-on-scroll">01 · Profile</div>
+    <h2 class="section-heading reveal-on-scroll">About Me</h2>
+    <p class="about-lede reveal-on-scroll">
+      I'm an <strong>Electronics and Communication Engineering</strong> student building assistive smart systems on a foundation of solid hardware design — sensor integration, microcontrollers, and the kind of embedded logic that turns a blink into a command. I write clearly about what I build and work well inside academic project teams.
+    </p>
+
+    <div class="timeline-track">
+      <div class="tl-node reveal-on-scroll">
+        <div class="tl-dot"></div>
+        <div class="tl-period">2023 — 2027</div>
+        <div class="tl-title">Bachelor of Technology</div>
+        <div class="tl-place">Narayana Engineering College</div>
+      </div>
+      <div class="tl-node reveal-on-scroll">
+        <div class="tl-dot"></div>
+        <div class="tl-period">2021 — 2023</div>
+        <div class="tl-title">Junior College</div>
+        <div class="tl-place">Sri Chaithanya Junior College</div>
+      </div>
+      <div class="tl-node reveal-on-scroll">
+        <div class="tl-dot"></div>
+        <div class="tl-period">2020 — 2021</div>
+        <div class="tl-title">High School</div>
+        <div class="tl-place">Sri Lakshmi English Medium School</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills" style="background:rgba(13,27,42,0.35);">
+  <div class="container-narrow">
+    <div class="eyebrow reveal-on-scroll">02 · Toolkit</div>
+    <h2 class="section-heading reveal-on-scroll">My Skills</h2>
+
+    <div class="skills-grid">
+      <div class="skill-chip reveal-on-scroll"><i class="bi bi-cpu"></i><span>Internet of Things (IoT)</span></div>
+      <div class="skill-chip reveal-on-scroll"><i class="bi bi-motherboard"></i><span>Embedded Systems</span></div>
+      <div class="skill-chip reveal-on-scroll"><i class="bi bi-memory"></i><span>Microcontrollers</span></div>
+      <div class="skill-chip reveal-on-scroll"><i class="bi bi-broadcast"></i><span>Sensor Integration</span></div>
+      <div class="skill-chip reveal-on-scroll"><i class="bi bi-gear-wide-connected"></i><span>Smart Control Systems</span></div>
+      <div class="skill-chip reveal-on-scroll"><i class="bi bi-people"></i><span>Team Leadership</span></div>
+      <div class="skill-chip reveal-on-scroll"><i class="bi bi-easel"></i><span>Technical Presentations</span></div>
+      <div class="skill-chip reveal-on-scroll"><i class="bi bi-diagram-3"></i><span>Project Coordination</span></div>
+    </div>
+
+    <div class="lang-row reveal-on-scroll">
+      <span class="lang-label">Languages</span>
+      <span class="lang-chip">English</span>
+      <span class="lang-chip">Tamil</span>
+      <span class="lang-chip">Telugu</span>
+      <span class="lang-chip">Hindi</span>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container-narrow">
+    <div class="eyebrow reveal-on-scroll">03 · Built</div>
+    <h2 class="section-heading reveal-on-scroll">Featured Projects</h2>
+
+    <div class="proj-grid">
+      <div class="proj-card reveal-on-scroll">
+        <div class="proj-index">PRJ / 01</div>
+        <div class="proj-icon"><i class="bi bi-eye"></i></div>
+        <h4>Eyeblink Controlled Wheelchair</h4>
+        <p>An assistive mobility device that detects intentional eye movements and translates them into directional commands, enabling independent navigation for individuals with severe physical disabilities.</p>
+      </div>
+      <div class="proj-card reveal-on-scroll">
+        <div class="proj-index">PRJ / 02</div>
+        <div class="proj-icon"><i class="bi bi-lightbulb"></i></div>
+        <h4>Automatic Street Lights</h4>
+        <p>Energy-efficient lighting proj-grid{grid-template-columns:1fr;}}
 
 .proj-card{
   background:linear-gradient(180deg,var(--panel) 0%,var(--panel-2) 100%);
