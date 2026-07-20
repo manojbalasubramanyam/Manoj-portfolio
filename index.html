@@ -676,4 +676,157 @@ footer p{margin:0;font-size:0.82rem;color:var(--ink-dim);}
         <p>Energy-efficient lighting that uses ambient light sensors to switch on at dusk and off at dawn — cutting power consumption and removing the need for manual operation.</p>
       </div>
       <div class="proj-card reveal-on-scroll">
-        <div class
+<div class="proj-index">PRJ / 03</div>
+        <div class="proj-icon"><i class="bi bi-robot"></i></div>
+        <h4>Obstacle Avoiding Robot</h4>
+        <p>An autonomous robotics platform equipped with ultrasonic sensors to continuously scan its environment, detect objects, and alter its path without human intervention.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="achievements" style="background:rgba(13,27,42,0.35);">
+  <div class="container-narrow">
+    <div class="eyebrow reveal-on-scroll">04 · Milestones</div>
+    <h2 class="section-heading reveal-on-scroll">Achievements &amp; Certifications</h2>
+    
+    <div class="two-col">
+      <div>
+        <h3 class="display-font reveal-on-scroll" style="margin-bottom:24px; font-size:1.4rem;">Achievements</h3>
+        <div class="list-item reveal-on-scroll">
+          <i class="bi bi-trophy-fill li-icon"></i>
+          <span>Presented a technical paper (IEEE format) on Embedded Systems and assistive technologies.</span>
+        </div>
+        <div class="list-item reveal-on-scroll">
+          <i class="bi bi-trophy-fill li-icon"></i>
+          <span>Successfully led a core technical research team for academic projects.</span>
+        </div>
+      </div>
+      
+      <div>
+        <h3 class="display-font reveal-on-scroll" style="margin-bottom:24px; font-size:1.4rem;">Certifications</h3>
+        <div class="list-item cert reveal-on-scroll">
+          <i class="bi bi-patch-check-fill li-icon"></i>
+          <span>Certification in Internet of Things (IoT) Fundamentals.</span>
+        </div>
+        <div class="list-item cert reveal-on-scroll">
+          <i class="bi bi-patch-check-fill li-icon"></i>
+          <span>Certification in Microcontroller Programming &amp; Architecture.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container-narrow">
+    <div class="eyebrow reveal-on-scroll">05 · Connect</div>
+    <h2 class="section-heading reveal-on-scroll">Get in Touch</h2>
+
+    <div class="contact-grid">
+      <a href="mailto:your.email@example.com" class="contact-card reveal-on-scroll">
+        <i class="bi bi-envelope"></i>
+        <h6>Email</h6>
+        <p>your.email@example.com</p>
+      </a>
+      
+      <!-- GitHub Link Replaced Here -->
+      <a href="https://github.com/Manojbalasubramanyam" target="_blank" class="contact-card reveal-on-scroll">
+        <i class="bi bi-github"></i>
+        <h6>GitHub</h6>
+        <p>Manojbalasubramanyam</p>
+      </a>
+      
+      <a href="tel:+919876543210" class="contact-card reveal-on-scroll">
+        <i class="bi bi-telephone"></i>
+        <h6>Phone</h6>
+        <p>+91 98765 43210</p>
+      </a>
+      
+      <div class="contact-card reveal-on-scroll" style="cursor:default;">
+        <i class="bi bi-geo-alt"></i>
+        <h6>Location</h6>
+        <p>Andhra Pradesh, India</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 Balasubramanyam Manoj. All rights reserved.</p>
+  <div class="declaration">Dedicated to building smart, accessible embedded systems.</div>
+</footer>
+
+</div> <!-- End content-layer -->
+
+<!-- JavaScript for UI interactions -->
+<script>
+  // 1. Scroll Progress Bar
+  window.addEventListener('scroll', () => {
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (winScroll / height) * 100;
+    document.getElementById('scroll-bar').style.width = scrolled + '%';
+  });
+
+  // 2. Mobile Nav Toggle
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
+  
+  // Close nav when a link is clicked
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+    });
+  });
+
+  // 3. Hero Animations and Typing Effect
+  document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => { document.getElementById('bootLine').classList.add('show'); }, 300);
+    setTimeout(() => { document.getElementById('avatarRing').classList.add('reveal'); }, 800);
+    setTimeout(() => { document.getElementById('heroTitle').classList.add('reveal'); }, 1200);
+    
+    // Typing Effect
+    setTimeout(() => {
+      const text = "Embedded Systems & IoT Developer";
+      let i = 0;
+      const typeWriter = () => {
+        if (i < text.length) {
+          document.getElementById('typedRole').innerHTML += text.charAt(i);
+          i++;
+          setTimeout(typeWriter, 50);
+        }
+      };
+      typeWriter();
+    }, 1600);
+    
+    setTimeout(() => { document.getElementById('heroSub').classList.add('reveal'); }, 2200);
+    setTimeout(() => { document.getElementById('heroBtn').classList.add('reveal'); }, 2400);
+  });
+
+  // 4. Scroll Reveal Observer
+  const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.15
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll('.reveal-on-scroll').forEach(el => {
+    observer.observe(el);
+  });
+</script>
+
+</body>
+  </html>
