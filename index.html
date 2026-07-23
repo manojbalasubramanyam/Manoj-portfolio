@@ -187,10 +187,20 @@ a{color:inherit;}
   border:2px solid var(--trace);
   box-shadow:0 0 0 6px rgba(0,255,157,0.06),0 0 40px rgba(0,255,157,0.15);
   background:var(--panel);
-  position: relative;
-  z-index: 2;
 }
-  .hero-title{
+.avatar-fallback{
+  width:168px;height:168px;
+  border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  background:var(--panel);
+  border:2px solid var(--trace);
+  font-family:'Space Grotesk',sans-serif;
+  font-size:2.6rem;font-weight:700;
+  color:var(--trace);
+  box-shadow:0 0 0 6px rgba(0,255,157,0.06),0 0 40px rgba(0,255,157,0.15);
+}
+
+.hero-title{
   font-size:clamp(2.1rem,5.5vw,3.4rem);
   font-weight:700;
   margin:0 0 12px;
@@ -588,7 +598,7 @@ footer p{margin:0;font-size:0.82rem;color:var(--ink-dim);}
 
     <div class="avatar-ring" id="avatarRing">
       <svg viewBox="0 0 196 196"><circle class="ring-path" cx="98" cy="98" r="92"/></svg>
-      <img src="manoj-photo.png" alt="Balasubramanyam Manoj" class="avatar-photo">
+      <div class="avatar-fallback">BM</div>
     </div>
 
     <h1 class="hero-title" id="heroTitle">Balasubramanyam Manoj</h1>
@@ -675,9 +685,9 @@ footer p{margin:0;font-size:0.82rem;color:var(--ink-dim);}
       </div>
       <div class="proj-card reveal-on-scroll">
         <div class="proj-index">PRJ / 03</div>
-        <div class="proj-icon"><i class="bi bi-motherboard"></i></div>
-        <h4>Smart Microcontroller Systems</h4>
-        <p>Developed custom embedded logic and sensor integration pipelines to process environmental data and trigger real-time physical responses via hardware interfaces.</p>
+        <div class="proj-icon"><i class="bi bi-heart"></i></div>
+        <h4>Community Service Project</h4>
+        <p>A volunteer-driven initiative designed to address specific local needs, foster civic responsibility, and improve the overall well-being of a community.</p>
       </div>
     </div>
   </div>
@@ -685,29 +695,19 @@ footer p{margin:0;font-size:0.82rem;color:var(--ink-dim);}
 
 <section id="achievements" style="background:rgba(13,27,42,0.35);">
   <div class="container-narrow">
-    <div class="eyebrow reveal-on-scroll">04 · Milestones</div>
-    <h2 class="section-heading reveal-on-scroll">Achievements</h2>
-
     <div class="two-col">
       <div>
-        <div class="list-item reveal-on-scroll">
-          <i class="bi bi-journal-text li-icon"></i>
-          <span>Authored and presented a 6-page, 2-column technical IEEE conference paper as Team Leader.</span>
-        </div>
-        <div class="list-item reveal-on-scroll">
-          <i class="bi bi-diagram-3 li-icon"></i>
-          <span>Successfully coordinated academic projects in collaboration with K. Jeevan Reddy, A. Uma Mahesh, D. Dhanush, and K. Chenchaiah under the guidance of Mrs. M. Divya vani.</span>
-        </div>
+        <div class="eyebrow reveal-on-scroll">04 · Recognition</div>
+        <h2 class="section-heading reveal-on-scroll" style="margin-bottom:30px;">Achievements</h2>
+        <div class="list-item reveal-on-scroll"><i class="bi bi-trophy-fill li-icon"></i><span>2nd prize — Project Expo, Narayana Engineering College, 2024</span></div>
+        <div class="list-item reveal-on-scroll"><i class="bi bi-trophy-fill li-icon"></i><span>3rd prize — Project Expo, Narayana Engineering College, 2025</span></div>
+        <div class="list-item reveal-on-scroll"><i class="bi bi-trophy-fill li-icon"></i><span>2nd prize — Project Expo, Narayana Engineering College, 2026</span></div>
       </div>
       <div>
-        <div class="list-item cert reveal-on-scroll">
-          <i class="bi bi-patch-check li-icon"></i>
-          <span>Completed coursework in Internet of Things (IoT) Fundamentals</span>
-        </div>
-        <div class="list-item cert reveal-on-scroll">
-          <i class="bi bi-patch-check li-icon"></i>
-          <span>Practical certification in Microcontroller Programming & Embedded Systems</span>
-        </div>
+        <div class="eyebrow reveal-on-scroll">05 · Verified</div>
+        <h2 class="section-heading reveal-on-scroll" style="margin-bottom:30px;">Certifications</h2>
+        <div class="list-item cert reveal-on-scroll"><i class="bi bi-patch-check-fill li-icon"></i><span>Certified in Quantum Fundamentals program</span></div>
+        <div class="list-item cert reveal-on-scroll"><i class="bi bi-patch-check-fill li-icon"></i><span>Certified in Competitive English by NPTEL</span></div>
       </div>
     </div>
   </div>
@@ -715,47 +715,235 @@ footer p{margin:0;font-size:0.82rem;color:var(--ink-dim);}
 
 <section id="contact">
   <div class="container-narrow">
-    <div class="eyebrow reveal-on-scroll">05 · Network</div>
-    <h2 class="section-heading reveal-on-scroll">Get In Touch</h2>
+    <div class="eyebrow reveal-on-scroll">06 · Reach Out</div>
+    <h2 class="section-heading reveal-on-scroll">Contact Me</h2>
 
     <div class="contact-grid">
       <a href="mailto:manojbalasubramanyam7@gmail.com" class="contact-card reveal-on-scroll">
-        <i class="bi bi-envelope"></i>
+        <i class="bi bi-envelope-at-fill"></i>
         <h6>Email</h6>
         <p>manojbalasubramanyam7@gmail.com</p>
       </a>
-      
       <a href="tel:+917287039493" class="contact-card reveal-on-scroll">
-        <i class="bi bi-telephone"></i>
+        <i class="bi bi-telephone-fill"></i>
         <h6>Phone</h6>
         <p>+91 7287039493</p>
       </a>
-      
-      <a href="https://github.com/Manojbalasubramanyam" target="_blank" class="contact-card reveal-on-scroll">
-        <i class="bi bi-github"></i>
-        <h6>GitHub</h6>
-        <p>Manojbalasubramanyam</p>
-      </a>
-      
-      <div class="contact-card reveal-on-scroll">
-        <i class="bi bi-geo-alt"></i>
+      <div class="contact-card reveal-on-scroll" style="cursor:default;">
+        <i class="bi bi-geo-alt-fill"></i>
         <h6>Location</h6>
         <p>Nellore, Andhra Pradesh</p>
       </div>
+      <a href="https://www.linkedin.com/in/manoj-balasubramanyam-646521353" target="_blank" rel="noopener" class="contact-card reveal-on-scroll">
+        <i class="bi bi-linkedin"></i>
+        <h6>LinkedIn</h6>
+        <p>Connect with me</p>
+      </a>
     </div>
   </div>
 </section>
 
 <footer>
-  <div class="container-narrow">
-    <p>&copy; 2026 Balasubramanyam Manoj. All rights reserved.</p>
-    <div class="declaration">
-      I hereby declare that the information provided above is true to the best of my knowledge and belief.
-    </div>
-  </div>
+  <p>&copy; 2026 Balasubramanyam Manoj. All Rights Reserved.</p>
+  <p class="declaration">"I hereby declare that the information provided above is true and correct to the best of my knowledge and belief."</p>
 </footer>
 
-</div> <!-- End of content-layer -->
+</div>
 
+<script>
+/* ===== Scroll progress bar ===== */
+window.addEventListener('scroll', () => {
+  const h = document.documentElement;
+  const pct = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
+  document.getElementById('scroll-bar').style.width = pct + '%';
+});
+
+/* ===== Mobile nav toggle ===== */
+const navToggle = document.getElementById('navToggle');
+const navLinks = document.getElementById('navLinks');
+navToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+/* ===== Hero boot sequence ===== */
+const bootLine = document.getElementById('bootLine');
+setTimeout(() => bootLine.classList.add('show'), 150);
+
+setTimeout(() => {
+  document.getElementById('avatarRing').classList.add('reveal');
+}, 700);
+
+setTimeout(() => {
+  document.getElementById('heroTitle').classList.add('reveal');
+}, 1000);
+
+const roles = ["Electronics & Communication Engineer", "Embedded Systems Builder", "IoT & Sensor Integrator"];
+const typedRole = document.getElementById('typedRole');
+let roleIdx = 0, charIdx = 0, deleting = false;
+
+function typeLoop(){
+  const current = roles[roleIdx];
+  if(!deleting){
+    typedRole.textContent = current.slice(0, charIdx+1);
+    charIdx++;
+    if(charIdx === current.length){
+      deleting = true;
+      setTimeout(typeLoop, 1800);
+      return;
+    }
+  } else {
+    typedRole.textContent = current.slice(0, charIdx-1);
+    charIdx--;
+    if(charIdx === 0){
+      deleting = false;
+      roleIdx = (roleIdx+1) % roles.length;
+    }
+  }
+  setTimeout(typeLoop, deleting ? 35 : 65);
+}
+setTimeout(typeLoop, 1500);
+
+setTimeout(() => document.getElementById('heroSub').classList.add('reveal'), 1600);
+setTimeout(() => document.getElementById('heroBtn').classList.add('reveal'), 1750);
+
+/* ===== Scroll reveal for sections ===== */
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if(entry.isIntersecting){
+      setTimeout(() => entry.target.classList.add('visible'), i * 40);
+      observer.unobserve(entry.target);
+    }
+  });
+}, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+
+document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
+
+/* ===== Signature element: animated circuit-trace background ===== */
+const canvas = document.getElementById('circuit-canvas');
+const ctx = canvas.getContext('2d');
+let W, H;
+
+function resize(){
+  W = canvas.width = window.innerWidth;
+  H = canvas.height = document.documentElement.scrollHeight;
+}
+resize();
+window.addEventListener('resize', resize);
+
+const GRID = 64;
+const nodes = [];
+const cols = Math.ceil(W / GRID) + 2;
+const rows = Math.ceil(H / GRID) + 2;
+
+// Build a sparse grid graph and pick random orthogonal traces
+function buildTraces(){
+  nodes.length = 0;
+  const traceCount = Math.floor((W * H) / 90000);
+  for(let i=0; i<traceCount; i++){
+    const startCol = Math.floor(Math.random()*cols);
+    const startRow = Math.floor(Math.random()*rows);
+    let x = startCol * GRID;
+    let y = startRow * GRID;
+    const segments = [{x,y}];
+    const segCount = 3 + Math.floor(Math.random()*4);
+    let dir = Math.floor(Math.random()*4); // 0up 1right 2down 3left
+    for(let s=0; s<segCount; s++){
+      // occasionally turn 90deg
+      if(Math.random() < 0.6){
+        dir = (dir + (Math.random()<0.5?1:-1) + 4) % 4;
+      }
+      const len = GRID * (1 + Math.floor(Math.random()*2));
+      if(dir===0) y -= len;
+      if(dir===1) x += len;
+      if(dir===2) y += len;
+      if(dir===3) x -= len;
+      segments.push({x,y});
+    }
+    nodes.push({
+      segments,
+      progress: Math.random(),
+      speed: 0.0015 + Math.random()*0.0025,
+      pulseLength: 0.12 + Math.random()*0.1,
+      hasNode: Math.random() < 0.5,
+      delay: Math.random()*4
+    });
+  }
+}
+buildTraces();
+window.addEventListener('resize', () => { buildTraces(); });
+
+function totalLen(segments){
+  let len = 0;
+  for(let i=0;i<segments.length-1;i++){
+    len += Math.hypot(segments[i+1].x-segments[i].x, segments[i+1].y-segments[i].y);
+  }
+  return len;
+}
+
+function pointAt(segments, t){
+  const total = totalLen(segments);
+  let target = total * t;
+  for(let i=0;i<segments.length-1;i++){
+    const segLen = Math.hypot(segments[i+1].x-segments[i].x, segments[i+1].y-segments[i].y);
+    if(target <= segLen){
+      const ratio = segLen === 0 ? 0 : target/segLen;
+      return {
+        x: segments[i].x + (segments[i+1].x-segments[i].x)*ratio,
+        y: segments[i].y + (segments[i+1].y-segments[i].y)*ratio
+      };
+    }
+    target -= segLen;
+  }
+  return segments[segments.length-1];
+}
+
+let t0 = performance.now();
+function draw(now){
+  const dt = now - t0;
+  t0 = now;
+  ctx.clearRect(0,0,W,H);
+
+  nodes.forEach(n => {
+    // draw dim base trace
+    ctx.beginPath();
+    ctx.moveTo(n.segments[0].x, n.segments[0].y);
+    for(let i=1;i<n.segments.length;i++) ctx.lineTo(n.segments[i].x, n.segments[i].y);
+    ctx.strokeStyle = 'rgba(0,255,157,0.06)';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+
+    // node dots at joints
+    if(n.hasNode){
+      n.segments.forEach(pt => {
+        ctx.beginPath();
+        ctx.arc(pt.x, pt.y, 1.6, 0, Math.PI*2);
+        ctx.fillStyle = 'rgba(0,255,157,0.12)';
+        ctx.fill();
+      });
+    }
+
+    // moving pulse
+    n.progress += n.speed * (dt/16.67);
+    if(n.progress > 1 + n.pulseLength) n.progress = -n.delay*0.05;
+
+    const segCountForGradient = 14;
+    for(let g=0; g<segCountForGradient; g++){
+      const tt = n.progress - (g/segCountForGradient)*n.pulseLength;
+      if(tt < 0 || tt > 1) continue;
+      const pt = pointAt(n.segments, tt);
+      const alpha = (1 - g/segCountForGradient) * 0.9;
+      ctx.beginPath();
+      ctx.arc(pt.x, pt.y, 1.8, 0, Math.PI*2);
+      ctx.fillStyle = `rgba(0,255,157,${alpha})`;
+      ctx.shadowColor = 'rgba(0,255,157,0.8)';
+      ctx.shadowBlur = 6;
+      ctx.fill();
+      ctx.shadowBlur = 0;
+    }
+  });
+
+  requestAnimationFrame(draw);
+}
+requestAnimationFrame(draw);
+</script>
 </body>
 </html>
