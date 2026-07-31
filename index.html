@@ -460,6 +460,7 @@ section{padding:100px 24px;position:relative;}
   border:1px solid var(--line);
   border-radius:8px;
   margin-bottom:12px;
+  text-decoration:none;
   transition:transform .25s ease,border-color .25s ease;
 }
 .list-item:hover{transform:translateX(6px);border-color:var(--gold);}
@@ -475,10 +476,9 @@ section{padding:100px 24px;position:relative;}
 /* ============ CONTACT ============ */
 .contact-grid{
   display:grid;
-  grid-template-columns:repeat(4,1fr);
+  grid-template-columns:repeat(auto-fit, minmax(190px, 1fr));
   gap:16px;
 }
-@media(max-width:900px){.contact-grid{grid-template-columns:repeat(2,1fr);}}
 @media(max-width:520px){.contact-grid{grid-template-columns:1fr;}}
 
 .contact-card{
@@ -598,7 +598,7 @@ footer p{margin:0;font-size:0.82rem;color:var(--ink-dim);}
 
     <div class="avatar-ring" id="avatarRing">
       <svg viewBox="0 0 196 196"><circle class="ring-path" cx="98" cy="98" r="92"/></svg>
-      <div class="avatar-fallback">BM</div>
+      <img src="manoj-photo.png" alt="Balasubramanyam Manoj" class="avatar-photo">
     </div>
 
     <h1 class="hero-title" id="heroTitle">Balasubramanyam Manoj</h1>
@@ -699,15 +699,28 @@ footer p{margin:0;font-size:0.82rem;color:var(--ink-dim);}
       <div>
         <div class="eyebrow reveal-on-scroll">04 · Recognition</div>
         <h2 class="section-heading reveal-on-scroll" style="margin-bottom:30px;">Achievements</h2>
-        <div class="list-item reveal-on-scroll"><i class="bi bi-trophy-fill li-icon"></i><span>2nd prize — Project Expo, Narayana Engineering College, 2024</span></div>
-        <div class="list-item reveal-on-scroll"><i class="bi bi-trophy-fill li-icon"></i><span>3rd prize — Project Expo, Narayana Engineering College, 2025</span></div>
-        <div class="list-item reveal-on-scroll"><i class="bi bi-trophy-fill li-icon"></i><span>2nd prize — Project Expo, Narayana Engineering College, 2026</span></div>
+        <a href="2nd prize in Project Expo in NarayanaEngineering College 2024.png" target="_blank" class="list-item reveal-on-scroll">
+          <i class="bi bi-trophy-fill li-icon"></i><span>2nd prize in Project Expo in NarayanaEngineering College 2024</span>
+        </a>
+        <a href="3rd prize in Project Expo in NarayanaEngineering College 2025.png" target="_blank" class="list-item reveal-on-scroll">
+          <i class="bi bi-trophy-fill li-icon"></i><span>3rd prize in Project Expo in NarayanaEngineering College 2025</span>
+        </a>
+        <a href="2nd prize in Project Expo in NarayanaEngineering College 2026.png" target="_blank" class="list-item reveal-on-scroll">
+          <i class="bi bi-trophy-fill li-icon"></i><span>2nd prize in Project Expo in NarayanaEngineering College 2026</span>
+        </a>
+        <a href="1st prize in Photography in NarayanaEngineering College 2026.png" target="_blank" class="list-item reveal-on-scroll">
+          <i class="bi bi-trophy-fill li-icon"></i><span>1st prize in Photography in NarayanaEngineering College 2026</span>
+        </a>
       </div>
       <div>
         <div class="eyebrow reveal-on-scroll">05 · Verified</div>
         <h2 class="section-heading reveal-on-scroll" style="margin-bottom:30px;">Certifications</h2>
-        <div class="list-item cert reveal-on-scroll"><i class="bi bi-patch-check-fill li-icon"></i><span>Certified in Quantum Fundamentals program</span></div>
-        <div class="list-item cert reveal-on-scroll"><i class="bi bi-patch-check-fill li-icon"></i><span>Certified in Competitive English by NPTEL</span></div>
+        <a href="Certification in Quantum Fundamentals program by Quantum valley.png" target="_blank" class="list-item cert reveal-on-scroll">
+          <i class="bi bi-patch-check-fill li-icon"></i><span>Certification in Quantum Fundamentals program by Quantum valley</span>
+        </a>
+        <a href="Certification in Competative English by NPTEL.png" target="_blank" class="list-item cert reveal-on-scroll">
+          <i class="bi bi-patch-check-fill li-icon"></i><span>Certification in Competative English by NPTEL</span>
+        </a>
       </div>
     </div>
   </div>
@@ -734,6 +747,11 @@ footer p{margin:0;font-size:0.82rem;color:var(--ink-dim);}
         <h6>Location</h6>
         <p>Nellore, Andhra Pradesh</p>
       </div>
+      <a href="https://github.com/manojbalasubramanyam" target="_blank" rel="noopener" class="contact-card reveal-on-scroll">
+        <i class="bi bi-github"></i>
+        <h6>GitHub</h6>
+        <p>github.com/manojbalasubramanyam</p>
+      </a>
       <a href="https://www.linkedin.com/in/manoj-balasubramanyam-646521353" target="_blank" rel="noopener" class="contact-card reveal-on-scroll">
         <i class="bi bi-linkedin"></i>
         <h6>LinkedIn</h6>
@@ -776,7 +794,7 @@ setTimeout(() => {
   document.getElementById('heroTitle').classList.add('reveal');
 }, 1000);
 
-const roles = ["Electronics & Communication Engineer", "Embedded Systems Builder", "IoT & Sensor Integrator"];
+const roles = ["Electronics & Communication Engineer", "Embedded Systems Builder", "IoT & Sensor Integrator", "Intern"];
 const typedRole = document.getElementById('typedRole');
 let roleIdx = 0, charIdx = 0, deleting = false;
 
