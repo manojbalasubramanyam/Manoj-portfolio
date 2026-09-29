@@ -71,7 +71,6 @@ a{color:inherit;}
   z-index:50;
   background:rgba(10,14,20,0.85);
   backdrop-filter:blur(14px);
-  -webkit-backdrop-filter:blur(14px);
   border-bottom:1px solid var(--line);
   padding:14px 0;
 }
@@ -319,7 +318,7 @@ section{padding:100px 24px;position:relative;}
   gap:0;
 }
 .timeline-track.edu-track{ grid-template-columns:repeat(3,1fr); }
-.timeline-track.exp-track{ grid-template-columns:1fr; max-width: 400px;}
+.timeline-track.exp-track{ grid-template-columns:1fr; max-width: 800px; gap: 30px;}
 
 .timeline-track.edu-track::before{
   content:'';
@@ -353,6 +352,16 @@ section{padding:100px 24px;position:relative;}
 .tl-title{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:1.05rem;margin-bottom:4px;color:var(--ink);}
 .tl-place{color:var(--ink-dim);font-size:0.85rem;}
 .tl-desc{color:var(--ink-dim);font-size:0.85rem; margin-top:8px; line-height: 1.6;}
+
+.tl-link {
+  color: var(--trace);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: color 0.2s ease;
+}
+.tl-link:hover { color: var(--gold); }
 
 @media(max-width:768px){
   .timeline-track.edu-track{grid-template-columns:1fr;gap:28px;}
@@ -645,13 +654,21 @@ footer p{margin:0;font-size:0.82rem;color:var(--ink-dim);}
       <div class="tl-node reveal-on-scroll">
         <div class="tl-dot" style="background:var(--bg);"></div>
         <div class="tl-period">2021 — 2023</div>
-        <div class="tl-title">Junior College</div>
+        <div class="tl-title">
+          <a href="Junior College.jpeg" target="_blank" class="tl-link">
+            Junior College <i class="bi bi-box-arrow-up-right" style="font-size:0.8rem;"></i>
+          </a>
+        </div>
         <div class="tl-place">Sri Chaithanya Junior College</div>
       </div>
       <div class="tl-node reveal-on-scroll">
         <div class="tl-dot" style="background:var(--bg);"></div>
         <div class="tl-period">2020 — 2021</div>
-        <div class="tl-title">High School</div>
+        <div class="tl-title">
+          <a href="High School.jpeg" target="_blank" class="tl-link">
+            High School <i class="bi bi-box-arrow-up-right" style="font-size:0.8rem;"></i>
+          </a>
+        </div>
         <div class="tl-place">Sri Lakshmi English Medium School</div>
       </div>
     </div>
@@ -667,9 +684,31 @@ footer p{margin:0;font-size:0.82rem;color:var(--ink-dim);}
       <div class="tl-node side-node reveal-on-scroll">
         <div class="tl-dot" style="background:transparent;"></div>
         <div class="tl-period">2026</div>
-        <div class="tl-title">Short-term Intern</div>
-        <div class="tl-place">SkillDzire</div>
+        <div class="tl-title">Android Development Intern</div>
+        <div class="tl-place">Prodigy InfoTech</div>
+        <div class="tl-desc">Completed an Android Development internship program focusing on application creation, logical task implementation, and scheduled deliverables.</div>
+      </div>
+      <div class="tl-node side-node reveal-on-scroll">
+        <div class="tl-dot" style="background:transparent;"></div>
+        <div class="tl-period">Internship</div>
+        <div class="tl-title">
+          <a href="internship-iot systems and smart solution.jpeg" target="_blank" class="tl-link">
+            IoT Systems and Smart Solution Intern <i class="bi bi-box-arrow-up-right" style="font-size:0.8rem;"></i>
+          </a>
+        </div>
+        <div class="tl-place">Industry Practical Experience</div>
         <div class="tl-desc">Gained practical industry experience focusing on technical development, system integration, and applying academic knowledge to real-world technological challenges.</div>
+      </div>
+      <div class="tl-node side-node reveal-on-scroll">
+        <div class="tl-dot" style="background:transparent;"></div>
+        <div class="tl-period">Internship</div>
+        <div class="tl-title">
+          <a href="internship-smart home automation using iot.jpeg" target="_blank" class="tl-link">
+            Smart Home Automation Using IoT Intern <i class="bi bi-box-arrow-up-right" style="font-size:0.8rem;"></i>
+          </a>
+        </div>
+        <div class="tl-place">Industry Practical Experience</div>
+        <div class="tl-desc">Developed smart home solutions integrating hardware sensors and internet of things networks to streamline and automate daily operations.</div>
       </div>
     </div>
   </div>
@@ -799,6 +838,10 @@ footer p{margin:0;font-size:0.82rem;color:var(--ink-dim);}
           <i class="bi bi-trophy-fill li-icon"></i>
           <span>1st prize in Photography in NarayanaEngineering College 2026</span>
         </a>
+        <div class="list-item reveal-on-scroll">
+          <i class="bi bi-trophy-fill li-icon"></i>
+          <span>Participant in QNX Student Hackathon 2026 by PiSquare Technologies</span>
+        </div>
       </div>
       <div>
         <div class="eyebrow reveal-on-scroll">06 · Verified</div>
@@ -811,9 +854,21 @@ footer p{margin:0;font-size:0.82rem;color:var(--ink-dim);}
           <i class="bi bi-patch-check-fill li-icon"></i>
           <span>Certification in Competative English by NPTEL</span>
         </a>
-        <div class="list-item cert reveal-on-scroll">
+        <a href="Realtime Programming for QNX OS by QNX(Blackberry).jpeg" target="_blank" class="list-item cert reveal-on-scroll">
           <i class="bi bi-patch-check-fill li-icon"></i>
           <span>Realtime Programming for QNX OS by QNX(Blackberry)</span>
+        </a>
+        <div class="list-item cert reveal-on-scroll">
+          <i class="bi bi-patch-check-fill li-icon"></i>
+          <span>Introduction to Internet of Things by NPTEL (SWAYAM)</span>
+        </div>
+        <div class="list-item cert reveal-on-scroll">
+          <i class="bi bi-patch-check-fill li-icon"></i>
+          <span>Introduction to Quantum Computing & Qiskit by NPTEL (SWAYAM)</span>
+        </div>
+        <div class="list-item cert reveal-on-scroll">
+          <i class="bi bi-patch-check-fill li-icon"></i>
+          <span>Renewable Energy Engineering by NPTEL (SWAYAM)</span>
         </div>
       </div>
     </div>
